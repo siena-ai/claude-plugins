@@ -1,0 +1,20 @@
+{
+  "name": "siena",
+  "displayName": "Siena",
+  "version": "0.1.0",
+  "description": "Work with your Siena account from Claude: analyze helpdesk conversations, understand Siena's features and connected apps, and configure the Shopping Agent.",
+  "author": {
+    "name": "Siena AI",
+    "url": "https://siena.cx"
+  },
+  "homepage": "https://siena.cx",
+  "repository": "https://github.com/siena-ai/claude-plugins",
+  "keywords": [
+    "siena",
+    "customer-support",
+    "helpdesk",
+    "ecommerce",
+    "analytics"
+  ],
+  "privacyPolicyUrl": "https://siena.cx/privacy-policy"
+}

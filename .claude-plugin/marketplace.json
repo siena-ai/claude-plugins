@@ -1,0 +1,15 @@
+{
+  "name": "siena",
+  "description": "Plugins that connect Claude to Siena, the AI customer support platform.",
+  "owner": {
+    "name": "Siena AI",
+    "url": "https://siena.cx"
+  },
+  "plugins": [
+    {
+      "name": "siena",
+      "source": "./siena",
+      "description": "Siena connector plus skills for analyzing helpdesk conversations, Siena's features and apps, and the Shopping Agent."
+    }
+  ]
+}

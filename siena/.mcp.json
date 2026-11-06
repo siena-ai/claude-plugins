@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "siena": {
+      "type": "http",
+      "url": "https://mcp.siena.cx/"
+    }
+  }
+}
