@@ -9,9 +9,9 @@ Produces clear, structured, implementation-ready journeys and Siena Policies gro
 
 TOOLS
 
-- Connected apps and their actions: `manage_automations` operations `list_modules` and `list_workflows`.
-- Existing journeys: `manage_automations` operations `list_automations` and `get_automation`.
-- Existing Siena Policies: `manage_policies` (`list`, `get`, `search`).
+- Connected apps and their actions: `read_automations` operations `list_modules` and `list_workflows`.
+- Existing journeys: `read_automations` operations `list_automations` and `get_automation`.
+- Existing Siena Policies: `read_policies` (`list`, `get`, `search`).
 
 This skill produces drafts. Create or change a journey or Policy only when the user asks for it: through the Siena connector a change saves immediately, with no approval step.
 
@@ -64,7 +64,7 @@ Complete all three before writing journey logic.
 
 2. Account & Context Review — Before pulling conversation data, ASK the user. Conversation data is not pulled by default. If the user references conversations or asks for analysis, proceed; otherwise proceed without.
 
-Review what's available in the customer's account: knowledge sources (KBs, help center, FAQs); account-level info (connected integrations, active journeys, existing intents, configured actions, tags in use); existing Siena Policies via `manage_policies` (reference if covering needed logic, note what to add if partial, flag if it contradicts SOP); channel configuration (only incorporate if explicitly configured). If access is limited, note what was inaccessible and proceed with what's available.
+Review what's available in the customer's account: knowledge sources (KBs, help center, FAQs); account-level info (connected integrations, active journeys, existing intents, configured actions, tags in use); existing Siena Policies via `read_policies` (reference if covering needed logic, note what to add if partial, flag if it contradicts SOP); channel configuration (only incorporate if explicitly configured). If access is limited, note what was inaccessible and proceed with what's available.
 
 3. Platform Verification — use only actions, checks, and data fields that exist in Siena's platform. Ground in list_modules + list_workflows output, not assumptions.
 - For every referenced data point ("check for chargebacks", "verify subscription tier"), identify exactly where it lives: order tags, Shopify fields, helpdesk metadata, subscription platform fields, or another integrated system.
@@ -143,7 +143,7 @@ Define exactly: what data Siena evaluates, what condition matters, what to do if
 Tag-checking and tag-applying remain in separate steps (functionally different operations).
 
 Referencing Policies
-Before writing logic inline, check for an existing Policy via `manage_policies`.
+Before writing logic inline, check for an existing Policy via `read_policies`.
 - Reference existing when: logic applies to multiple journeys, contains independently-updated data, or a Policy already exists.
 - Write inline when: logic is specific to this journey only.
 - Recommend new when: no Policy exists but the logic is reusable — classify per Policy Decision Framework.
@@ -203,7 +203,7 @@ Only include when specific communication rules apply: hyperlink formatting, no-s
 
 SIENA POLICY HANDLING
 
-Policies are reusable documents embedded into journey steps that Siena reads at runtime. After completing each journey, evaluate every Policy candidate. Always check existing Policies first via `manage_policies` — if one exists, reference it; if it partially covers, note what to add.
+Policies are reusable documents embedded into journey steps that Siena reads at runtime. After completing each journey, evaluate every Policy candidate. Always check existing Policies first via `read_policies` — if one exists, reference it; if it partially covers, note what to add.
 
 Policy Decision Framework
 - Tier 1 (Draft Immediately): all required content available from SOP, agent behavior, approved defaults, conversation data, or platform data. Examples: cancellation save flow, refund eligibility, replacement eligibility, product catalog from Shopify.

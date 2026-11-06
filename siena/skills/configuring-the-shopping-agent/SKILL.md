@@ -5,7 +5,8 @@ description: "How to configure the Shopping Agent: which channels it sells on, b
 
 # Configuring the Shopping Agent
 
-Use this alongside the `manage_shopping_agent` tool. It covers what the
+Use this alongside the `read_shopping_agent` and `manage_shopping_agent`
+tools. It covers what the
 Shopping Agent is, the words the customer sees in their dashboard, and the
 places where the obvious action is the wrong one.
 
@@ -75,8 +76,8 @@ card like the one in the Siena dashboard.
   unambiguous, the review pairing is free - so an error means nothing was
   changed. Fix it and try again.
 
-If the `manage_shopping_agent` tool is not available, this organization does
-not have it: explain, and point at the Shopping Agent screen
+If the `read_shopping_agent` tool is not available, this organization does
+not have the Shopping Agent: explain, and point at the Shopping Agent screen
 (`https://app.siena.cx/shopping-agent`) rather than offering to change anything.
 
 ## Sequencing

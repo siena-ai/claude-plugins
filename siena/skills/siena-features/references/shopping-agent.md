@@ -4,8 +4,8 @@ Siena's agent for selling: it recommends products, answers catalog questions and
 handles pre-purchase conversations. UI: **Shopping Agent**, at `/shopping-agent`.
 
 **To make changes, use the `configuring-the-shopping-agent` skill** with the
-`manage_shopping_agent` tool. If that tool is not available, this
-organization does not have it: explain and point at the screen rather
+`read_shopping_agent` and `manage_shopping_agent` tools. If
+`read_shopping_agent` is not available, this organization does not have it: explain and point at the screen rather
 than offering to change anything.
 
 ## What it is

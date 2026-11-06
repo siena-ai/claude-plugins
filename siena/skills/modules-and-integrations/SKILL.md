@@ -30,13 +30,13 @@ Three integrations are both, so do not treat the categories as exclusive:
 
 ## Reading the current state
 
-- `manage_automations` operation `list_modules` — which apps exist, which are installed, and per-channel detail on what each ingests. Each row carries `key`, `name`, `type` and `installed`.
+- `read_automations` operation `list_modules` — which apps exist, which are installed, and per-channel detail on what each ingests. Each row carries `key`, `name`, `type` and `installed`.
 
   **`type: "helpdesk"` means channel, not helpdesk.** Every channel gets that value — Meta, Slack, Yotpo, Okendo, Klaviyo, Email and Siena Live Chat included. Never tell a user their helpdesk is Yotpo or Slack on the strength of this field; the helpdesks are Gorgias, Zendesk, Intercom, Kustomer, Dixa and Gladly. The other two values are `module` and `custom_module`.
   The output key is `modules` but it holds **every app, channels included, installed or not**. Do not read the key as "these are all modules", and always check `installed` before saying a merchant has something.
 
   A channel row also carries `channels_status`, and — only when `channels_status` is `ok` — `active`, `enabled_channels` and `integrations[]`. `enabled_channels` is the union over **active** accounts only, so an inactive account contributes nothing. `channels_status: "error"` means the lookup failed — it does not mean the channel ingests nothing, and must never be reported as "no channels enabled".
-- `manage_automations` operation `list_workflows` — the workflows available per module, each tagged with its `workflow_type` (subworkflow, workflow_function, data_reader).
+- `read_automations` operation `list_workflows` — the workflows available per module, each tagged with its `workflow_type` (subworkflow, workflow_function, data_reader).
 
 Installed means a connection row exists. Installed is not the same as active, and active is not the same as configured to do a given thing.
 

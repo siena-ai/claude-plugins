@@ -168,8 +168,8 @@ connected, what actions it runs, what is configurable and where; use it before
 any integration-dependent claim), `data-analytics` (use it before any data,
 voice-of-customer, topics or evaluations question), and
 `configuring-the-shopping-agent` (making Shopping Agent changes; it needs the
-`manage_shopping_agent` tool, and if that tool is not available this
-organization does not have it).
+`read_shopping_agent` and `manage_shopping_agent` tools, and if
+`read_shopping_agent` is not available this organization does not have it).
 
 ## Links
 
