@@ -10,7 +10,7 @@ data shown in Siena's **Evaluations** tabs and **Topics Explorer**. Users compar
 answers to those screens, so you must apply the *same filters the UI applies by default*.
 If you skip them, your counts and averages will not match the tab.
 
-All three screens query the **same OpenSearch conversations index** that your
+All three screens read the **same conversation data** that your
 `search_conversations` and `aggregate_conversations` tools query, so you can reproduce the
 UI exactly.
 

@@ -81,29 +81,26 @@ rather than truncated.
 - **Switching the Shopping Agent on**, and **moving to 2.0** — ask Siena.
 - **The agent's own underlying instructions** are not merchant-editable.
   Guidance is the merchant's equivalent, and usually what they actually want.
-- **Selling Style.** The consultative / education-first / direct control is not
-  saved. Do not offer it.
+- **Selling Style.** Do not offer the consultative / education-first / direct
+  control.
 - **Enabling it on Slack, native Meta DMs or Meta comments.** These have no
   channel setting at all — absent is not "off and could be turned on".
 
 ## Honest caveats
 
-- **Store Availability** can be switched on but has no effect.
-- **The Collections tab does not save.** Its include/exclude, priority and bulk
-  controls change the screen and toast success without persisting. A merchant
-  who says they already excluded a collection there is describing something that
-  never landed — read the stored state, not the display.
-- **The Product Catalog's bulk bar does not save either**, and its Sync button
-  starts no sync. Single-product changes on that screen do persist.
+- **Do not offer Store Availability.**
+- **Collection settings: read the stored state, not the screen.** When a
+  merchant says they already excluded or reprioritised a collection, confirm it
+  in the stored settings before relying on it.
+- **Product Catalog:** make product changes one product at a time.
 - **Conversation starter regeneration is queued**, not immediate, and is
   impossible for a product with no storefront page.
 - **Multi-store orgs have one catalog per store** with no safe default — ask
   which store rather than guessing.
 - **An org whose Shopping Agent was never set up** cannot be configured at all;
   route to Siena rather than retrying.
-- **Review pairings are per Shopify store**, Yotpo and Okendo only. On the 2.0
-  screen the store and platform dropdowns do not save — they toast success
-  without pairing anything; only the legacy screen actually pairs.
+- **Review pairings are per Shopify store**, Yotpo and Okendo only. Pair them on
+  the legacy review-pairing screen.
 - **Reviews is a real channel with no control on either screen.** The setting
   exists and is honoured, but nothing in the dashboard sets it — so "there is no
   Reviews toggle" is true of the screens, not of the capability.

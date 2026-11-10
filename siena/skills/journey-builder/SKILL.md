@@ -268,7 +268,7 @@ Before finalizing, check for: missing data inputs, unclear SOP, unsupported exce
 
 If any gap exists, surface it as a clear question — never work around it with assumptions.
 - Customer must answer during conversation → Customer Questions
-- Implementation team must answer → Implementation Questions
+- The merchant's team must answer → Implementation Questions
 
 HARD STOP — PRE-OUTPUT CHECKLIST
 

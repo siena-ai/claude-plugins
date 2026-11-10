@@ -19,9 +19,8 @@ agent does to an incoming comment, and what the merchant controls.
   item classified **intent** is answered by the Support Agent and billed as
   support, while chatter and moderation bill as social. Friend tags are not
   billed at all, and neither are stand-downs or a human's own manual actions.
-- **Facebook and Instagram only.** No TikTok, X, LinkedIn or YouTube ingestion —
-  those names do appear as dead labels across several social screens, and are
-  not connectors.
+- **Facebook and Instagram only.** No TikTok, X, LinkedIn or YouTube ingestion.
+  Those names are not connectors.
 - It acts on the brand's **own** accounts. One connected page or account = one
   settings set.
 
@@ -123,8 +122,8 @@ flag because ad comments usually warrant different handling.
 Moderation (the three rules, each with an action, plus a keyword list) ·
 Influencer Handling (DMs only) · Chatter (persona, both engagement sliders,
 Response mode Draft or Respond per sentiment, the negative Remaining % action,
-and a vibe: Heartfelt, Playful, Bold or Custom) · Friend Tags (one checkbox,
-which does not save — see below) · Intents (Response mode) · Copy to all pages.
+and a vibe: Heartfelt, Playful, Bold or Custom) · Intents (Response mode) · Copy
+to all pages.
 
 ## Journeys on social channels
 
@@ -171,11 +170,9 @@ merchant-editable.
 
 ## Honest caveats
 
-- **The "Hide if negative sentiment" checkbox under Friend Tags saves nothing.**
-  It renders, takes a click, and resets on reload. The Copy to all pages dialog
-  also lists "Friend tags handling", which does not exist. Offer neither.
-- **Intent and influencer settings only save with a channel selected** —
-  otherwise they are silently discarded.
+- **Friend tags have no setting.** They are always cleared; do not offer a
+  friend-tag option.
+- **Select a channel before changing intent or influencer settings.**
 - **Stand-downs assign nobody.** An intent held for review stays open and
   unassigned; there is no social team to route to. Negative-chatter "Flag for
   review" is the exception — it resolves the conversation done rather than

@@ -22,7 +22,8 @@ Connects Claude to your [Siena](https://siena.cx) account and teaches it how Sie
 In Claude Code:
 
 ```
-/plugin install siena --marketplace siena-ai/claude-plugins
+/plugin marketplace add siena-ai/claude-plugins
+/plugin install siena@siena
 ```
 
 ## Requirements

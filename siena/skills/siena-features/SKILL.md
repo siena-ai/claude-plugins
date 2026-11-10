@@ -72,15 +72,15 @@ Use the merchant's words. The third column is what never to say back to them.
 
 | Term | What it is | Never call it |
 |---|---|---|
-| **Journeys** | The request types Siena recognises and answers | "automations" or "intents". The word still leaks into a few toasts; that is a slip, not the name |
+| **Journeys** | The request types Siena recognises and answers | "automations" or "intents" |
 | **Policies** | Reusable rules referenced from Journeys | |
 | **Persona Studio** | Voice and tone, per channel | |
 | **Business Context** | Company-wide facts, shared across channels | |
 | **Knowledge Sources** | Help centres, Shopify pages, past conversations, websites, PDFs | |
 | **Docs** | The merchant's own documentation, at `/knowledge`. Also where Skills live | |
 | **Memory** | What Siena remembers about their *end customers* | |
-| **Generative Resolutions** | Answering from knowledge with no Journey | "CPRM" |
-| **Thinking time** | The wait before replying | "smart delay" |
+| **Generative Resolutions** | Answering from knowledge with no Journey | |
+| **Thinking time** | The wait before replying | |
 | **Apps** / **Custom Apps** | Connected systems. An App's capabilities are its **Actions** | "modules" |
 | **Shopping Agent** | The selling agent | "Sales Agent" — though one older screen still says "Sales Agent Guidance" |
 | **Social Agent** | Facebook and Instagram comments and DMs | |
@@ -151,11 +151,9 @@ removed; and Manager and Agent cannot change roles.
 3. **Do not name a setting that is not in one of these skills.** Several exist
    with no control on any screen; sending a merchant looking for one that is not
    there is worse than saying you do not know.
-4. **Distinguish "off", "absent" and "not saved".** Off can be switched on.
-   Absent cannot — some channels have no setting at all. And a few dashboard
-   controls change the screen while persisting nothing, so a merchant describing
-   what they already did may be describing something that never landed. The
-   references name every one.
+4. **Distinguish "off" from "absent".** Off can be switched on. Absent cannot —
+   some channels have no setting at all. When a merchant describes a change they
+   already made, confirm it in the stored settings before relying on it.
 
 ## References
 

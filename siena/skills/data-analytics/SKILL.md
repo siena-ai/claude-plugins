@@ -109,12 +109,12 @@ Goal: identify patterns in what/how/why, with customer voice. Use two-phase samp
 **Never trust subcategories, sentiment scores, or AI-assigned classifications blindly:**
 
 1. **Always validate** against actual conversations (summaries in Phase 1, messages in Phase 2) — subcategories are algorithmically assigned and may not reflect customer language; check customers actually say what the category implies
-2. **Investigate large uncategorized segments** — if 49% are "General Requests" with no specific reason, dig into what's really happening instead of just reporting the percentage; these often hide important patterns
+2. **Investigate large uncategorized segments** — if 45% are "General Requests" with no specific reason, dig into what's really happening instead of just reporting the percentage; these often hide important patterns
 3. **Provide context for sentiment scores** — sentiment measures conversation tone, not satisfaction with the product/service
 
-**POOR:** "Product Over-Supply is 7% of cancellations (156 conversations)"
+**POOR:** "Product Over-Supply is 8% of cancellations (96 conversations)"
 
-**GOOD:** "Product Over-Supply is 7% of cancellations (156 conversations). Examining conversation summaries, this category includes customers mentioning inventory buildup. From 10 detailed conversations, customers explicitly say things like *'I already have an unopened box under my sink'* — confirming the category reflects customer-stated reasons."
+**GOOD:** "Product Over-Supply is 8% of cancellations (96 conversations). Examining conversation summaries, this category includes customers mentioning inventory buildup. From 10 detailed conversations, customers explicitly say things like *'I still have two full packs I haven't opened'* — confirming the category reflects customer-stated reasons."
 
 ## Data Transparency Standards
 
@@ -122,11 +122,11 @@ Goal: identify patterns in what/how/why, with customer voice. Use two-phase samp
 ```markdown
 ## Data Collection Approach
 
-**Phase 1 - Pattern Identification:** 25 conversations analyzed (1% of 2,313 total); fields: summaries, sentiment, categories, dates; time period: last 30 days; filters: non-spam, [specific filters]
+**Phase 1 - Pattern Identification:** 12 conversations analyzed (1% of 1,200 total); fields: summaries, sentiment, categories, dates; time period: last 30 days; filters: non-spam, [specific filters]
 
 **Phase 2 - Quote Extraction:** 10 representative conversations with full messages
 
-**Aggregate Analysis:** 2,313 conversations (100% coverage) — used for volume, distribution, trends, percentages
+**Aggregate Analysis:** 1,200 conversations (100% coverage) — used for volume, distribution, trends, percentages
 
 **Data Limitations:** [any relevant caveats]
 ```
@@ -138,15 +138,15 @@ Goal: identify patterns in what/how/why, with customer voice. Use two-phase samp
 
 **Surface observation is not sufficient — go beyond cataloging data to interpreting meaning:**
 
-1. **Name significant patterns** — "The Sentiment Paradox," "The Missing 49%" — memorable and actionable
+1. **Name significant patterns** — "The Sentiment Paradox," "The Missing 45%" — memorable and actionable
 2. **Identify contradictions** — "70% positive sentiment but customers are still leaving" reveals the service-quality vs product-satisfaction distinction; contradictions often reveal deeper insights
 3. **Distinguish root causes from symptoms** — not "customers cancel due to product over-supply" but "shipment frequency misaligned with usage rates"; ask what systemic issue creates the symptom
 4. **Connect business context** — link findings to policies, processes, systems: "final sale policy amplifies frustration when sizing is inconsistent"; "spike in complaints aligns with sale periods — volume pressure affects QC"
 5. **Provide layered analysis** — Layer 1: facts → Layer 2: patterns → Layer 3: implications → Layer 4: questions raised
 
-**POOR (surface):** "Customers are canceling subscriptions. Main reasons: general requests (49%), product over-supply (7%), financial hardship (6%)."
+**POOR (surface):** "Customers are canceling subscriptions. Main reasons: general requests (45%), product over-supply (8%), financial hardship (6%)."
 
-**GOOD (layered):** "2,313 cancellation conversations across 8 categories (facts). Nearly half (49%) classified as 'General Requests' with no specific reason captured (pattern). This uncategorized segment is a missed opportunity to understand why customers leave — and the 74% positive sentiment suggests they leave despite good service (implication). What happens if you analyze timing relative to shipment cycles? Do you follow up 30-60 days later? (questions)"
+**GOOD (layered):** "1,200 cancellation conversations across 8 categories (facts). Nearly half (45%) classified as 'General Requests' with no specific reason captured (pattern). This uncategorized segment is a missed opportunity to understand why customers leave — and the 72% positive sentiment suggests they leave despite good service (implication). What happens if you analyze timing relative to shipment cycles? Do you follow up 30-60 days later? (questions)"
 
 ## Additional Analysis Types
 

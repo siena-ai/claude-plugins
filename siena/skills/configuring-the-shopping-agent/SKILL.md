@@ -12,8 +12,8 @@ places where the obvious action is the wrong one.
 
 ## What the Shopping Agent is
 
-The Shopping Agent (internally `sales_agent`) is a branch of Siena's response
-generation, not a separate bot. It recommends products, looks up orders and
+The Shopping Agent is a branch of Siena's response generation, not a separate
+bot. It recommends products, looks up orders and
 answers catalog questions. When it finds products, its answer **replaces**
 normal knowledge-base retrieval for that message.
 
@@ -121,16 +121,16 @@ Say so plainly instead of implying a change was made:
   on, channel toggles change nothing. Tell them to contact Siena.
 - **Editing the agent's prompt.** Only Siena staff can change it. Guidance is the
   customer-facing equivalent, and it is usually what they actually want.
-- **Selling Style.** The consultative / education-first / direct slider in the
-  dashboard is not wired to anything yet - it is not saved. Do not offer it.
+- **Selling Style.** Do not offer the consultative / education-first / direct
+  slider.
 - **Catalog and collection merchandising** is only available to organizations on
   Shopping Agent 2.0. If those actions are missing from your available actions,
   that is why - the organization is not on it, and enabling it needs Siena.
 
 ## Honest caveats
 
-- **Store Availability** can be switched on but currently has no runtime
-  effect. If they ask for it, set it and say it is staged but not yet active.
+- **Store Availability** is not yet active. If they ask for it, set it and say
+  it is staged but not yet active.
 - **Slack, native Meta DMs and Meta comments** have no channel setting at all,
   so the Shopping Agent cannot be enabled on them. Absent is not the same as
   off - do not tell a customer it is "switched off" and could be turned on.
@@ -146,13 +146,10 @@ Say so plainly instead of implying a change was made:
   default. When the tool lists several, it names each store's
   `shopifyIntegrationUuid` - ask the customer which store they mean and pass
   that uuid, rather than guessing or reporting the action as impossible.
-- **The dashboard's collections tab does not save.** Its include/exclude,
-  priority and bulk controls change the screen and show a success toast, but
-  no request is sent - so a customer who says they already excluded a
-  collection there is describing something that never persisted. This tool is
-  the only surface where a collection change actually lands. Read
-  `list_collections` for the stored state rather than taking the dashboard's
-  current display as fact, and offer to make the change here.
+- **Collection changes: use this tool.** When a customer says they already
+  excluded or reprioritised a collection, read `list_collections` for the
+  stored state rather than taking the dashboard's display as fact, and offer
+  to make the change here.
 - **Review pairings** are per Shopify store, and a uuid from another
   organization is reported as not found. Read `list_review_pairings` first to
   get the real uuids instead of constructing them.

@@ -1,6 +1,6 @@
 # Module: Klaviyo
 
-Type: **both channel and module** — the only integration classed as both. UI: **App Store → Channels → Klaviyo → <account>**.
+Type: **both channel and module**. UI: **App Store → Channels → Klaviyo → <account>**.
 
 ## Workflows
 

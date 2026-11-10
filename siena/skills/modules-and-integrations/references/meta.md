@@ -16,7 +16,7 @@ Data readers: comment context and DM context.
 
 ## Journeys
 
-Journeys reach Meta only through their own **Meta Comments** or **Meta DMs** response. There is no fallback to the journey's default response: a journey without one is never matched on that channel, and the comment or DM gets no reply. For how the Social Agent classifies and routes each item, load `Feature: Social Agent`.
+Journeys reach Meta only through their own **Meta Comments** or **Meta DMs** response. There is no fallback to the journey's default response: a journey without one is never matched on that channel, and the comment or DM gets no reply. For how the Social Agent classifies and routes each item, see the `siena-features` skill's `references/social-agent.md`.
 
 ## Settings available in the UI
 

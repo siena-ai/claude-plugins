@@ -59,7 +59,7 @@ Settings save on change; there is no Save button on most cards.
 
 - There is no per-workflow switch on this page. The Workflows tab is read-only, and the four clickable rows are informational pages that link back to the Settings tab. Whether an action runs is set by the automation that calls it.
 - Confidence threshold and retry count exist but have no control on this screen.
-- Order protection beyond the claim policy — pricing, revenue share and enablement are Siena staff only.
+- Order protection beyond the claim policy — pricing and enablement are Siena staff only.
 
 ## Direct link
 

@@ -186,12 +186,8 @@ author generated ones.
 
 ## Honest caveats
 
-- **The CSAT follow-up threshold control does nothing** and cannot be changed.
-  Do not describe it as configurable.
-- Toggling "Show next to messages" alone can leave Save disabled; something else
-  must change too.
-- The floating search bar shows on desktop by default even where the saved
-  setting reads as off, so the screen may not match what the merchant sees.
+- **The CSAT follow-up threshold is not configurable.** Do not describe it as
+  configurable.
 - Settings are per widget — answering as though there is one set is how a
   merchant edits the wrong one.
 
