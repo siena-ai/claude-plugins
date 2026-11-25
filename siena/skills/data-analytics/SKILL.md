@@ -155,6 +155,7 @@ Sentiment trends across channels/time · escalation patterns (when and why) · A
 ## Tool Notes
 
 - If the user asks about **topics**, use aggregate_conversations / search_conversations with the field `subcategories.category`
+- To restrict an analysis to **Shopping Agent conversations**, filter `appliedContexts.type` equals `SALES_AGENT`. It marks the whole conversation (the same set as the Inbox filter "Shopping agent engaged"), not the message the Shopping Agent answered.
 
 ## Additional information
 - For Social Agent data, or data from the Meta (Facebook/Instagram) integration, read `references/social-agent-data.md`.
