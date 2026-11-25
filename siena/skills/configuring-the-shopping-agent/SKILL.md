@@ -10,6 +10,9 @@ tools. It covers what the
 Shopping Agent is, the words the customer sees in their dashboard, and the
 places where the obvious action is the wrong one.
 
+To analyze how the Shopping Agent performed (volume, topics, sentiment), use
+the `data-analytics` skill and filter `appliedContexts.type` equals `SALES_AGENT`.
+
 ## What the Shopping Agent is
 
 The Shopping Agent is a branch of Siena's response generation, not a separate
